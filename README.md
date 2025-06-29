@@ -61,30 +61,18 @@ WIP
 ---
 
 ## 📋 Takeaways
-- It was delightful to apply JavaScript to a 'realistic' project as an ecommerce.
-- It was exciting to unlock so many new functionalities while developing this project! 🤩
-- No drama with github during this sprint (!!!).
-- Deeper understanding of layout and styles.
-- I understand now the unique responsibility principle.
-- The HTML validation & the 'blur' event were super interesting.
+WIP
 
 
 
 
 
 ## 💬 Notes
-- Missing some backend in order to make the navbar on the checkout page useful.
-- Many other ideas to improve commercial purposes on the backlist.
-- Refactorizing was super satisfying.
-
+WIP
 
 
 
 ### ⭐ Highlights
 
-- Thanks to Rick for his check.
-- This is progress. Small but steady.
-
-![](https://i.pinimg.com/originals/20/2d/f7/202df7a818ffdf632d5e342141562218.gif)
-
+WIP
 ---
