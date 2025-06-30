@@ -303,7 +303,7 @@ describe('Function "hoursToMinutes"', () => {
   it('should be declared', () => {
     expect(typeof hoursToMinutes).toBe('function');
   });
-
+                    
   it('should return an array', () => {
     expect(hoursToMinutes(movies) instanceof Array).toBe(true);
   });
