@@ -1,24 +1,36 @@
+"use strict"
+
 // Exercise 1: Get the array of all directors.
 function getAllDirectors(array) {
-  let result =  ???;
-  console.log("EXERCICE 1 ->", result);
+  let result =  array.map(movie => movie.director);
+  //console.log("EXERCISE 1 ->", result);
   return result;
 }
 
 // Exercise 2: Get the films of a certain director
 function getMoviesFromDirector(array, director) {
- 
+  let result = array.filter(movie => movie.director === director).map(movie => movie);
+  //console.log("EXERCISE 2 ->", result);
+  return result;
 }
 
-// Exercise 3: Calculate the average of the films of a given director.
+// Exercise 3: Calculate the average score of the films of a given director.
 function moviesAverageOfDirector(array, director) {
-  
+  let scores = array.filter(movie => movie.director === director).map(movie => movie.score);
+  let avScore = parseFloat(Number(scores.reduce((acc, currValue) => acc + currValue, 0) / scores.length).toFixed(2));
+  //console.log("EXERCISE 3 ->", avScore);
+  return avScore;
 }
 
 // Exercise 4:  Alphabetic order by title 
 function orderAlphabetically(array) {
-  
+  const ordered = [...array]
+  .sort((a, b) => a.title.localeCompare(b.title))
+  .splice(0, 20)
+  .map(element => element.title);
+  return ordered;
 }
+
 
 // Exercise 5: Order by year, ascending
 function orderByYear() {
