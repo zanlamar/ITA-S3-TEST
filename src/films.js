@@ -33,23 +33,51 @@ function orderAlphabetically(array) {
 
 
 // Exercise 5: Order by year, ascending
-function orderByYear() {
-
+function orderByYear(array) {
+  const arrayByYear = [...array]
+  .sort((a, b) => { 
+    if (a.year !== b.year) return (a.year - b.year);
+    return a.title.localeCompare(b.title);  
+  });
+  return arrayByYear;
 }
+
 
 // Exercise 6: Calculate the average of the movies in a category
-function moviesAverageByCategory() {
-
-}
+function moviesAverageByCategory(array, category) {
+  const byGenre = array.filter((movie) => movie.genre.includes(category)).map(movie => movie.score);
+  let avScore = parseFloat(Number(byGenre.reduce((acc, currValue) => acc + currValue, 0) / byGenre.length).toFixed(2));
+  return avScore;g
+};
 
 // Exercise 7: Modify the duration of movies to minutes
-function hoursToMinutes() {
+  function hoursToMinutes(movies) {
+    return movies.map(movie => {
+      const newArray = { ...movie};
+      let min = 0;
+      let hours = 0;
+      let unity = movie.duration.split(' ');
+  
+      unity.forEach(element => {
+        if (element.includes('h')) {
+          hours = parseInt(element);
+        }
+        if (element.includes('min')) {
+          min = parseInt(element);
+        }
+      });
+      newArray.duration = hours * 60 + min;
 
-}
+      return newArray;
+    });
+  }
 
 // Exercise 8: Get the best film of a year
-function bestFilmOfYear() {
-  
+function bestFilmOfYear(movies, year) {
+  let perYear = movies.filter(movie => movie.year === year);
+  let bestRatings = [... perYear].sort((a, b) => b.score - a.score);
+  return bestRatings.length > 0 ? [bestRatings[0]] : [];
+
 }
 
 
