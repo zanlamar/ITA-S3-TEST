@@ -71,10 +71,11 @@ function moviesAverageByCategory() {
   }
 
 // Exercise 8: Get the best film of a year
-function bestFilmOfYear(movies) {
+function bestFilmOfYear(movies, year) {
+  let perYear = movies.filter(movie => movie.year === year);
+  let bestRatings = [... perYear].sort((a, b) => b.score - a.score);
+  return bestRatings.length > 0 ? [bestRatings[0]] : [];
 
-
-  return newArray;
 }
 
 
