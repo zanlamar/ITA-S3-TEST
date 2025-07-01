@@ -7,7 +7,6 @@ Third sprint of the bootcamp. We focus now on test methods and good practices wi
 
 
 
-
 ## 🎯 Objectives
 
 - **JavaScript Functions**: Writing efficient JavaScript functions to perform specific tasks.
@@ -17,7 +16,8 @@ Third sprint of the bootcamp. We focus now on test methods and good practices wi
 
 ## 💻 Technologies Used
 
-WIP
+- JavaScript
+- Jest
 
 ## 📋 Requirements
 
@@ -36,43 +36,31 @@ open index.html
 
 
 ## 📁 Project Structure
-WIP
+The project was developed in two branches: `main`and `develop`.
+
+Folder structure: 
+```
+📁 STARTER-CODE-FRONTEND-SHOP
+├── 📁 .github
+├── 📁 node_modules
+├── 📁 src
+│   ├── 📄 data.js
+│   ├── 📄 films.js
+│   └── 📄 index.html
+├── 📁 tests
+│   └── 📄 films.spec.js
+├── 📄 package-lock.json
+├── 📄 test-results.html
+└── 📄 README.md
+
+```
 
 
-
----
-
-## 🔮  Functionalities
-
-WIP
----
-
-## 👩🏻‍🎨 Layout
-
-WIP
-
----
-
-
-### 📸  Preview
-
-WIP
 
 ---
 
 ## 📋 Takeaways
-WIP
+- Great way to understand the let / const differences.
+- First touch with .github workflows, great potential there.
 
-
-
-
-
-## 💬 Notes
-WIP
-
-
-
-### ⭐ Highlights
-
-WIP
 ---
